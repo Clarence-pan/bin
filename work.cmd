@@ -1,1 +1,1 @@
-git checkout work
+@git checkout work

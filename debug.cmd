@@ -1,3 +1,3 @@
-git checkout debug
-git merge work
+@git checkout debug
+@git merge work
 

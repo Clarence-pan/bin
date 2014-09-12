@@ -1,3 +1,4 @@
+@echo off
 cd %1
 git stash
 git checkout work

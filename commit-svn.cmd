@@ -1,3 +1,4 @@
+@echo off
 git stash
 git checkout work
 call update-svn.cmd

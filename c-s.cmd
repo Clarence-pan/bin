@@ -1,1 +1,1 @@
-call commit-svn.cmd
+@call commit-svn.cmd
