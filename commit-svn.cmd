@@ -1,8 +1,15 @@
 @echo off
-git stash
-git checkout work
-call update-svn.cmd
-git rebase git-svn
-echo git svn dcommit
-git stash pop
+call :run git stash
+call :run git checkout work
+call :run call update-svn.cmd
+call :run git rebase git-svn
+call :run echo git svn dcommit
+call :run git stash pop
 
+goto :end
+:run
+  echo RUN: %*
+  %*
+goto :end
+
+:end
