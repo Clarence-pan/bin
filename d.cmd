@@ -1,0 +1,1 @@
+@call debug.cmd
