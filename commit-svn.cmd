@@ -3,7 +3,15 @@ call :run git stash
 call :run git checkout work
 call :run call update-svn.cmd
 call :run git rebase git-svn
-call :run echo git svn dcommit
+call :run git diff git-svn work
+set confirm=y
+set /p confirm=Confirm your commit[Y/n]:
+if "%confirm%" == "y" (
+    call :run git svn dcommit
+)
+if "%confirm%" == "Y" (
+    call :run git svn dcommit
+)
 call :run git stash pop
 
 goto :end
