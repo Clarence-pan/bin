@@ -1,0 +1,1 @@
+@"D:\software\emacs-24.3\bin\runemacs.exe" %*
