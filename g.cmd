@@ -12,6 +12,10 @@ if "%1" == "ac" (
   git commit
   goto :end
 )
+if "%1" == "s" (
+  git status
+  goto :end
+)
 
 git %*
 
