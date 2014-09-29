@@ -21,6 +21,8 @@ if ($status['branch'] != 'work'){
 
 git::svn_update();
 
+git::stash_pop($stash);
+
 
 
 
