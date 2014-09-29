@@ -9,5 +9,7 @@ function run($cmd, &$returnVar=null, $echo=true){
         echo implode("\n", $output);
         echo "\n";
     }
+
+    $GLOBALS['output'] = $output;
 }
 
